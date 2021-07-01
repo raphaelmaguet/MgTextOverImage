@@ -16,10 +16,11 @@ Then implement a UIView in your ViewControllerScene.
 
 In Identity Inspector -> Custom Class call MgTextOverImage and create the link in your ViewController : @IBOutlet weak var setDisplayView: MgTextOverImage!
 
-Then in Attributes Inspector adjust the view settings.
+Then in Attributes Inspector adjust the parameters of the view.
+The values of LabelX, LabelY, LabelW, and LabelH are a percentage that references the dimensions of the parent UIView.
 
 Now you can use it wherever you want like this: 
 
-setDisplayView.setText(MGSetText: "MY_TEXT", MGSetImage: (UIImage(named: "MY_IMAGE")? UIImage(named: " MY_DEFAULT_IMAGE"))!
+setDisplayView.setText(MGSetText: "MY_TEXT", MGSetImage: (UIImage(named: "MY_IMAGE") ? UIImage(named: " MY_DEFAULT_IMAGE"))!
 
 Enjoy 
